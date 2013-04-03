@@ -1,0 +1,6 @@
+package org.lansir.beautifulgirls.common;
+
+public final class AppConfig{
+	public static final String MARKET = "${apk.market}";
+}
+

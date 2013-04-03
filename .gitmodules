@@ -1,0 +1,6 @@
+[submodule "contrib/Slidingmenu"]
+	path = contrib/Slidingmenu
+	url = https://github.com/jfeinstein10/SlidingMenu.git
+[submodule "contrib/ActionBarSherlock"]
+	path = contrib/ActionBarSherlock
+	url = https://github.com/JakeWharton/ActionBarSherlock.git

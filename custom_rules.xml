@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="BetweenUsCustom" default="">	
+    <property name="apk-version" value="lastest" />
+    <property name="apk-market" value="default" />
+    
+    <target name="genall" depends="-pre-genall">
+        <antcall target="-post-release" >
+            <param name="apk-market" value="1"/>
+        </antcall>
+        <antcall target="-post-genall" />
+    </target>
+    
+    <target name="-pre-genall" >
+		<echo>删除build_release目录</echo>
+        <delete includeemptydirs="true" quiet="true">
+            <fileset dir="build_release" includes="**/*"/>
+        </delete>
+    </target>
+    <target name="-post-release" >
+        <antcall target="release" />
+		<property name="out.final.file" location="${out.absolute.dir}/${ant.project.name}-release.apk" />
+		<copy file="${out.final.file}" tofile="build_release/${ant.project.name}-release-${apk-version}-${apk-market}.apk" />
+    </target>
+    <target name="-post-genall" >
+		<echo>删除bin目录</echo>
+        <delete includeemptydirs="true" quiet="true">
+            <fileset dir="bin" includes="**/*"/>
+        </delete>
+    </target>
+
+</project>

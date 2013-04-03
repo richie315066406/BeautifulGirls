@@ -1,0 +1,6 @@
+package org.lansir.beautifulgrils.common;
+
+public final class AppConfig{
+	public static final String MARKET = "@apk.market@";
+}
+
