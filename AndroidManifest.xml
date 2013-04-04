@@ -6,6 +6,7 @@
     <uses-sdk
         android:minSdkVersion="8"
         android:targetSdkVersion="16" />
+    <uses-permission android:name="android.permission.INTERNET"/>
     <application
         android:icon="@drawable/ic_launcher"
         android:label="@string/app_name" 
@@ -22,7 +23,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".ui.HomeActivity"
+            android:name="org.lansir.beautifulgirls.ui.HomeActivity"
             android:label="@string/app_name" />
     </application>
 </manifest> 

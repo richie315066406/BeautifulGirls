@@ -12,9 +12,47 @@
   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
   See the License for the specific language governing permissions and
   limitations under the License.
-  -->
+-->
 <resources>
 
     <color name="accent_1">#ff4683ec</color>
+    <color name="primary_text_on_light">#ff333333</color>
+    <color name="bg_normal">#fff4f4f4</color>
+    <color name="secondary_text_on_light">#ff848484</color>
+    
+    <color name="lightblue">#ffadd8e6</color>
+    <color name="darkgrey">#ffa9a9a9</color>
+    <color name="lightyellow">#ffffffe0</color>
+    <color name="yellow">#ffffff00</color>
+    <color name="snow">#fffffafa</color>
+    <color name="floralwhite">#fffffaf0</color>
+    <color name="gold">#ff333333</color>
+    <color name="hotpink">#ffff69b4</color>
+    <color name="tomato">#ffff6347</color>
+    <color name="deeppink">#ffff1493</color>
+    <color name="fuchsia">#ffff00ff</color>
+    <color name="magenta">#ffff00ff</color>
+    <color name="red">#ffff0000</color>
+    <color name="oldlace">#fffdf5e6</color>
+    <color name="lightgoldenrodyellow">#fffafad2</color>
+    <color name="linen">#fffaf0e6</color>
+    <color name="antiquewhite">#fffaebd7</color>
+    <color name="salmon">#fffa8072</color>
+    <color name="ghostwhite">#fff8f8ff</color>
+    <color name="mintcream">#fff5fffa</color>
+    <color name="whitesmoke">#fff5f5f5</color>
+    <color name="beige">#fff5f5dc</color>
+    <color name="wheat">#fff5deb3</color>
+    <color name="sandybrown">#fff4a460</color>
+    <color name="azure">#fff0ffff</color>
+    <color name="honeydew">#fff0fff0</color>
+    <color name="aliceblue">#fff0f8ff</color>
+    <color name="khaki">#fff0e68c</color>
+    <color name="lightcoral">#fff08080</color>
+    <color name="palegoldenrod">#ffeee8aa</color>
+    <color name="violet">#ffee82ee</color>
+    <color name="gainsboro">#ff333333</color>
+    <color name="lightgrey">#ff333333</color>
+    <color name="channelheader">#ffe0e0e0</color>
 
 </resources>

@@ -16,6 +16,8 @@
 
 package org.lansir.beautifulgirls.ui;
 
+import java.util.List;
+
 import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.content.pm.ResolveInfo;
@@ -23,8 +25,6 @@ import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentTransaction;
-
-import java.util.List;
 
 /**
  * A {@link BaseActivity} that can contain multiple panes, and has the ability to substitute
@@ -92,7 +92,7 @@ public abstract class BaseMultiPaneActivity extends BaseActivity {
         private String mFragmentTag;
         private int mContainerId;
 
-        public FragmentReplaceInfo(Class fragmentClass, String fragmentTag, int containerId) {
+        public FragmentReplaceInfo(Class fragmentClass, String fragmentTag,int containerId) {
             mFragmentClass = fragmentClass;
             mFragmentTag = fragmentTag;
             mContainerId = containerId;

@@ -2,4 +2,14 @@
 <resources>
     <string name="app_name">Beautiful Girls</string>
     <string name="btnLogin">Login</string>
+    
+    <string name="menu_settings">设置</string>
+    <string name="menu_feedback">反馈</string>
+    <string name="menu_logout">退出</string>
+    <string name="menu_feedback">反馈或建议</string>
+    <string name="menu_home">主页</string>
+    <string name="menu_checkupdate">检查更新</string>
+    <string name="menu_version_introduction">版本介绍</string>
+    
+    <string name="fragment_home">BeautifulGirls</string>
 </resources>

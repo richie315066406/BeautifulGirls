@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:background="@color/bg_normal" android:scrollbars="none" android:layout_width="200dp" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+   <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <include layout="@layout/menu_account" />
+
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            
+            <TextView android:id="@+id/menu_shortcur_home" android:text="@string/menu_home" style="@style/slidingmenu_item_bar" />
+            <TextView android:id="@+id/menu_shortcut_setting" android:text="@string/menu_settings" style="@style/slidingmenu_item_bar" />
+            <TextView android:id="@+id/menu_shortcut_feedback" android:visibility="gone" android:text="@string/menu_feedback" style="@style/slidingmenu_item_bar" />
+            <TextView android:id="@+id/menu_shortcut_update_check" android:text="@string/menu_checkupdate" style="@style/slidingmenu_item_bar" />
+            <TextView android:id="@+id/menu_shortcut_version_introduction" android:text="@string/menu_version_introduction" style="@style/slidingmenu_item_bar" />
+            <TextView android:id="@+id/menu_shortcut_quit" android:text="@string/menu_logout" style="@style/slidingmenu_item_bar" />
+            <ImageView android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@drawable/menu_item_split_line" android:scaleType="fitXY" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

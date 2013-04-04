@@ -97,4 +97,16 @@
     <style name="ActionBar.TabView" parent="FrameworkRoot.ActionBar.TabView">
         <item name="android:background">@drawable/tab_white_ab</item>
     </style>
+    
+    <style name="slidingmenu_item_bar">
+        <item name="android:textSize">16.0sp</item>
+        <item name="android:textColor">@color/primary_text_on_light</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:background">@drawable/menu_item_bar_bg</item>
+        <item name="android:paddingLeft">13.299988dip</item>
+        <item name="android:paddingRight">13.299988dip</item>
+        <item name="android:clickable">true</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">42.5dip</item>
+    </style>
 </resources>

@@ -13,20 +13,28 @@ import android.graphics.drawable.BitmapDrawable;
 import android.graphics.drawable.Drawable;
 import android.net.Uri;
 import android.os.Bundle;
+import android.support.v4.app.ListFragment;
 import android.support.v4.app.NavUtils;
 
 import com.actionbarsherlock.view.MenuItem;
+import com.slidingmenu.lib.SlidingMenu;
 import com.slidingmenu.lib.app.SlidingFragmentActivity;
 
 public abstract class BaseActivity extends SlidingFragmentActivity {
+	protected ListFragment mFrag;
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 
-		// If Android Beam APIs are available, set up the Beam easter egg as the
-		// default Beam
-		// content. This can be overridden by subclasses.
+		// customize the SlidingMenu
+		SlidingMenu sm = getSlidingMenu();
+		sm.setShadowWidthRes(R.dimen.shadow_width);
+		sm.setShadowDrawable(R.drawable.shadow);
+		sm.setBehindOffsetRes(R.dimen.slidingmenu_offset);
+		sm.setFadeDegree(0.35f);
+		sm.setTouchModeAbove(SlidingMenu.TOUCHMODE_FULLSCREEN);
 
+		getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 		getSupportActionBar().setHomeButtonEnabled(true);
 	}
 
