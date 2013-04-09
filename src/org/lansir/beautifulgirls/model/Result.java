@@ -1,14 +1,23 @@
 package org.lansir.beautifulgirls.model;
 
 public class Result {
-	protected int iRetCode;
+	protected Integer retCode;
+	protected String msg;
 
-	public int getRetCode() {
-		return iRetCode;
+	public Integer getRetCode() {
+		return retCode;
 	}
 
-	public void setRetCode(int iRetCode) {
-		this.iRetCode = iRetCode;
+	public void setRetCode(Integer iRetCode) {
+		this.retCode = iRetCode;
+	}
+
+	public String getMsg() {
+		return msg;
+	}
+
+	public void setMsg(String sMsg) {
+		this.msg = sMsg;
 	}
 	
 	

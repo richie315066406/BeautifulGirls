@@ -99,10 +99,15 @@ def init():
 	cmd_upate_undergarment = "android update project -p contrib/Slidingmenu/library "
 	print(cmd_upate_undergarment)
 	os.system(cmd_upate_undergarment)
+	
+	cmd_upate_pulltorefresh = "android update project -p contrib/PullToRefresh/library "
+	print(cmd_upate_pulltorefresh)
+	os.system(cmd_upate_pulltorefresh)
+	
 	cmd_upate_betweenus = "android update project -p ./ -t android-15 "
 	print(cmd_upate_betweenus)
 	os.system(cmd_upate_betweenus)
-
+	
 	'''
 	print('拷贝其它库到本地目录')
 	sourceFile = "contrib/weibo_android_sdk/weibo.sdk.android.sso.jar"

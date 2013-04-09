@@ -1,7 +1,6 @@
 package org.lansir.beautifulgirls.model;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
-import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 
 public class Category {
 	private Integer id;

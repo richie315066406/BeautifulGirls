@@ -8,6 +8,7 @@ import java.util.Random;
 import org.lansir.beautifulgirls.R;
 import org.lansir.beautifulgirls.action.CategoryAction;
 import org.lansir.beautifulgirls.adapter.CategoryAdapter;
+import org.lansir.beautifulgirls.common.Constants.Extra;
 import org.lansir.beautifulgirls.exception.AkException;
 import org.lansir.beautifulgirls.model.Category;
 import org.lansir.beautifulgirls.model.CategoryResult;
@@ -39,17 +40,25 @@ public class HomeFragment extends SherlockFragment {
 		View view = inflater.inflate(R.layout.list_grid, null);
 		this.mGridView = (GridView) view.findViewById(R.id.gridView);
 		
-		List<Category> listCategories = initCategoresFromAsset();
-		if(listCategories != null)
-			mCategoryAdapter = new CategoryAdapter(listCategories,inflater);
-		else
-			mCategoryAdapter = new CategoryAdapter(inflater);
-		mGridView.setAdapter(mCategoryAdapter);
-		CategoryAsyncTask asyncTask = new CategoryAsyncTask();
-		asyncTask.execute(0);
 		return view;
 	}
 	
+	@Override
+	public void onActivityCreated(Bundle savedInstanceState) {
+		super.onActivityCreated(savedInstanceState);
+		LogUtil.v("onActivityCreated");
+		List<Category> listCategories = initCategoresFromAsset();
+		if(listCategories != null)
+			mCategoryAdapter = new CategoryAdapter(listCategories,getSherlockActivity().getLayoutInflater());
+		else
+			mCategoryAdapter = new CategoryAdapter(listCategories,getSherlockActivity().getLayoutInflater());
+		mGridView.setAdapter(mCategoryAdapter);
+		OnCategoryItemClickListener onItemClickListener = new OnCategoryItemClickListener();
+		mGridView.setOnItemClickListener(onItemClickListener);
+		CategoryAsyncTask asyncTask = new CategoryAsyncTask();
+		asyncTask.fireOnParallel();
+	}
+
 	private List<Category> initCategoresFromAsset(){
 		InputStream inputStream;
 		try {
@@ -72,9 +81,9 @@ public class HomeFragment extends SherlockFragment {
 				.getIntArray(R.array.color_array);
 		Random ramdon = new Random();
 		int initIndex = Math.abs(ramdon.nextInt())
-				% (colors.length - 10);
+				% (colors.length);
 		for (int i = 0; i < listCategories.size(); i++) {
-			listCategories.get(i).setColor(colors[initIndex + i]);
+			listCategories.get(i).setColor(colors[(initIndex + i)%colors.length]);
 		}
 		return listCategories;
 	}
@@ -100,7 +109,7 @@ public class HomeFragment extends SherlockFragment {
 				List<Category> mListCategory = t.getCategories();
 				initCategoriesColor(mListCategory);
 				LogUtil.v("mListCategory size:" + mListCategory.size());
-				mCategoryAdapter.setListCategory(mListCategory);
+				mCategoryAdapter.setListObjects(mListCategory);
 				mCategoryAdapter.notifyDataSetChanged();
 			}else{
 				LogUtil.v("CategoryResult is null");
@@ -122,7 +131,7 @@ public class HomeFragment extends SherlockFragment {
 			Category category = (Category) parent.getItemAtPosition(position);
 			Intent intent = new Intent(getSherlockActivity(), PictureSeriesActivity.class);
 			intent.putExtra(Intent.EXTRA_TITLE, category.getName());
-			intent.putExtra("CategoryId", category.getId());
+			intent.putExtra(Extra.CATEGORY_ID, category.getId());
 			startActivity(intent);			
 		}
 	}

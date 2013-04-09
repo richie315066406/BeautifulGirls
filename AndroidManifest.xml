@@ -1,21 +1,26 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-      package="org.lansir.beautifulgirls"
-      android:versionCode="1"
-      android:versionName="1.0">
+    package="org.lansir.beautifulgirls"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
     <uses-sdk
         android:minSdkVersion="8"
-        android:targetSdkVersion="16" />
-    <uses-permission android:name="android.permission.INTERNET"/>
+        android:targetSdkVersion="16"
+       />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+
     <application
-        android:icon="@drawable/ic_launcher"
-        android:label="@string/app_name" 
-        android:theme="@style/Theme.App">
+        android:icon="@drawable/logo"
+        android:name=".ui.BGApplication"
+        android:label="@string/app_name"
+        android:theme="@style/Theme.App" >
         <activity
             android:name=".ui.AppStart"
             android:label="@string/app_name"
-            android:screenOrientation="portrait"
-            android:theme="@android:style/Theme.NoTitleBar" >
+            android:theme="@style/Theme.App.Start" android:configChanges="keyboardHidden|orientation" android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -23,7 +28,23 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="org.lansir.beautifulgirls.ui.HomeActivity"
-            android:label="@string/app_name" />
+            android:name=".ui.HomeActivity"
+            android:label="@string/app_name" android:configChanges="keyboardHidden|orientation" android:screenOrientation="portrait"/>
+        <activity
+            android:name=".ui.phone.PictureSeriesActivity"
+            android:label="@string/app_name" android:parentActivityName=".ui.HomeActivity" android:configChanges="keyboardHidden|orientation" android:screenOrientation="portrait"/>
+        <activity
+            android:name=".ui.phone.PictureActivity"
+            android:label="@string/app_name" android:parentActivityName=".ui.phone.PictureSeriesActivity" android:configChanges="keyboardHidden|orientation" android:screenOrientation="portrait"/>
+        <activity
+            android:name=".ui.PicturePagerActivity"
+            android:label="@string/app_name" android:parentActivityName=".ui.phone.PictureActivity" android:configChanges="keyboardHidden|orientation" android:screenOrientation="portrait"/>
+        <activity
+            android:name=".ui.phone.CommentActivity"
+            android:label="@string/title_comment" android:parentActivityName=".ui.PicturePagerActivity" android:configChanges="keyboardHidden|orientation" android:screenOrientation="portrait"/>
+        <activity
+            android:name=".ui.phone.CreateCommentActivity"
+            android:label="@string/title_comment" android:parentActivityName=".ui.phone.CommentActivity" android:configChanges="keyboardHidden|orientation" android:screenOrientation="portrait"/>
     </application>
-</manifest> 
+
+</manifest>

@@ -5,11 +5,11 @@ import java.net.URLEncoder;
 
 import org.lansir.beautifulgirls.utils.FileUtil;
 import org.lansir.beautifulgirls.utils.HashUtil;
+import org.lansir.beautifulgirls.utils.LogUtil;
 
 import android.content.Context;
 import android.content.SharedPreferences;
 import android.os.Environment;
-import org.lansir.beautifulgirls.utils.LogUtil;
 
 /**
  * 在SD卡中存储文件夹的实现 
@@ -50,7 +50,7 @@ public abstract class FilesCacheSDFoldersImpl<V> implements FilesCache<V> {
     protected abstract V xform(String fileAbsoPathAndName);
     protected abstract void output(String fileAbsoPath, String fileName, V v);
     
-    private String mapRule(String key) {
+	private String mapRule(String key) {
         // because the chinese char in url will break the md5.
         return HashUtil.md5(URLEncoder.encode(key));
     }

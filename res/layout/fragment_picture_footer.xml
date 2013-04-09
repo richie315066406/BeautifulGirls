@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="@dimen/bottombar_height"
+    android:background="@color/footer_background"
+    android:gravity="center" >
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_weight="1.0" >
+
+        <ImageButton
+            android:id="@+id/ibGood"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/bottombar_height"
+            android:background="@color/transparent"
+            android:contentDescription="@string/descr_image"
+            android:scaleType="center"
+            android:src="@drawable/btn_good" />
+
+        <TextView
+            android:id="@+id/tvGoodCount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top|center"
+            android:layout_marginLeft="10.0dip"
+            android:layout_marginTop="@dimen/image_count_padding_top"
+            android:background="@color/image_tips_color"
+            android:ellipsize="marquee"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:gravity="top|center"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:minWidth="20.0dip"
+            android:scrollHorizontally="true"
+            android:singleLine="true"
+            android:textColor="@android:color/white"
+            android:textSize="8.0sp" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_weight="1.0" >
+
+        <ImageButton
+            android:id="@+id/ibBad"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/bottombar_height"
+            android:background="@color/transparent"
+            android:contentDescription="@string/descr_image"
+            android:scaleType="center"
+            android:src="@drawable/btn_bad" />
+
+        <TextView
+            android:id="@+id/tvBadCount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top|center"
+            android:layout_marginLeft="10.0dip"
+            android:layout_marginTop="@dimen/image_count_padding_top"
+            android:background="@color/image_tips_color"
+            android:ellipsize="marquee"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:gravity="top|center"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:minWidth="20.0dip"
+            android:scrollHorizontally="true"
+            android:singleLine="true"
+            android:textColor="@android:color/white"
+            android:textSize="8.0sp" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_weight="1.0" >
+
+        <ImageButton
+            android:id="@+id/ibComment"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/bottombar_height"
+            android:background="@color/transparent"
+            android:contentDescription="@string/descr_image"
+            android:scaleType="center"
+            android:src="@drawable/btn_comment" />
+
+        <TextView
+            android:id="@+id/tvCommentCount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top|center"
+            android:layout_marginLeft="10.0dip"
+            android:layout_marginTop="@dimen/image_count_padding_top"
+            android:background="@color/image_tips_color"
+            android:ellipsize="marquee"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:gravity="top|center"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:minWidth="20.0dip"
+            android:scrollHorizontally="true"
+            android:singleLine="true"
+            android:textColor="@android:color/white"
+            android:textSize="8.0sp" />
+    </FrameLayout>
+
+    <ImageButton
+        android:id="@+id/ibDownload"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/bottombar_height"
+        android:layout_weight="1.0"
+        android:background="@color/transparent"
+        android:contentDescription="@string/descr_image"
+        android:scaleType="center"
+        android:src="@drawable/btn_download" />
+
+    <ImageButton
+        android:id="@+id/ibTransmit"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/bottombar_height"
+        android:layout_weight="1.0"
+        android:background="@color/transparent"
+        android:contentDescription="@string/descr_image"
+        android:scaleType="center"
+        android:src="@drawable/btn_transmit" />
+
+</LinearLayout>

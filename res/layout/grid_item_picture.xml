@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <ImageView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/ivPictureImage"
+        android:layout_width="fill_parent"
+        android:layout_height="100dp"
+        android:adjustViewBounds="true"
+        android:contentDescription="@string/descr_image"
+        android:scaleType="centerCrop" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="right|bottom" >
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:adjustViewBounds="true"
+            android:contentDescription="@string/descr_image"
+            android:scaleType="fitCenter"
+            android:src="@drawable/btn_good_normal" />
+
+        <TextView
+            android:id="@+id/tvPictureGood"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" 
+            android:paddingLeft="1dp"/>
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:adjustViewBounds="true"
+            android:contentDescription="@string/descr_image"
+            android:scaleType="fitCenter"
+            android:src="@drawable/btn_bad_normal" 
+            android:layout_marginLeft="2dp"/>
+
+        <TextView
+            android:id="@+id/tvPictureBad"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" 
+            android:paddingLeft="1dp"/>
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:adjustViewBounds="true"
+            android:contentDescription="@string/descr_image"
+            android:scaleType="fitCenter"
+            android:src="@drawable/btn_download_normal" 
+            android:layout_marginLeft="2dp"/>
+
+        <TextView
+            android:id="@+id/tvPictureDownload"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" 
+            android:paddingLeft="1dp"/>
+    </LinearLayout>
+
+</LinearLayout>

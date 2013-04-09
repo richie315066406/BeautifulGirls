@@ -18,5 +18,16 @@
 
     <dimen name="slidingmenu_offset">60dp</dimen>
     <dimen name="shadow_width">15dp</dimen>
-
+	
+    <dimen name="text_size_large">22.0dip</dimen>
+    <dimen name="middle_margin">8.0dip</dimen>
+    <dimen name="bottombar_height">55.0dip</dimen>
+    <dimen name="photo_page_big_font">28.0dip</dimen>
+    <dimen name="text_height">220.0px</dimen>
+    <dimen name="text_pading_lr">20.0px</dimen>
+    <dimen name="pagetext_padding_right">15.0px</dimen>
+    <dimen name="pagetext_padding_buttom">15.0px</dimen>
+    <dimen name="comment_content_line_space">5.0px</dimen>
+    <dimen name="comment_head_image_margin">15.0px</dimen>
+    <dimen name="image_count_padding_top">2.0dip</dimen>
 </resources>

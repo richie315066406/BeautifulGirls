@@ -2,6 +2,9 @@
 <lint>
     <issue id="NewApi">
         <ignore path="src\org\lansir\beautifulgirls\cache\FilesCacheSDFoldersImpl.java" />
+        <ignore path="src\org\lansir\beautifulgirls\ui\CreateCommentFragment.java" />
+        <ignore path="src\org\lansir\beautifulgirls\utils\DialogAsyncTask.java" />
+        <ignore path="src\org\lansir\beautifulgirls\utils\FragmentUtil.java" />
         <ignore path="src\org\lansir\beautifulgirls\utils\SimpleAsyncTask.java" />
     </issue>
 </lint>

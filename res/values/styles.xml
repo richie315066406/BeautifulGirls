@@ -56,6 +56,8 @@
         <item name="actionBarTabBarStyle">@style/ActionBar.TabBar</item>
         <item name="android:actionBarTabTextStyle">@style/ActionBar.TabText</item>
         <item name="actionBarTabTextStyle">@style/ActionBar.TabText</item>
+        <item name="homeAsUpIndicator">@drawable/abs__ic_ab_back_holo_light</item>
+        <item name="android:homeAsUpIndicator">@drawable/abs__ic_ab_back_holo_light</item>
     </style>
     
     <!-- Base themes for the app -->
@@ -67,10 +69,10 @@
     
     <!-- Action bar -->
     <style name="ActionBar" parent="FrameworkRoot.ActionBar">
-        <item name="android:background">@drawable/actionbar_background</item>
-        <item name="background">@drawable/actionbar_background</item>
-        <item name="android:icon">@drawable/actionbar_icon</item>
-        <item name="icon">@drawable/actionbar_icon</item>
+        <item name="android:background">@drawable/actionbar_bg</item>
+        <item name="background">@drawable/actionbar_bg</item>
+        <item name="android:icon">@drawable/logo</item>
+        <item name="icon">@drawable/logo</item>
         <item name="android:displayOptions">showHome|homeAsUp|showTitle</item>
         <item name="displayOptions">showHome|homeAsUp|showTitle</item>
         <item name="android:titleTextStyle">@style/ActionBar.TitleText</item>
@@ -83,7 +85,7 @@
     </style>
     
     <style name="ActionBar.TitleText" parent="FrameworkRoot.ActionBar.TitleText">
-        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textColor">@android:color/black</item>
     </style>
 
     <style name="ActionBar.TabBar" parent="FrameworkRoot.ActionBar.TabBar">
@@ -91,7 +93,7 @@
     </style>
 
     <style name="ActionBar.TabText" parent="FrameworkRoot.ActionBar.TabText">
-        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textColor">@android:color/black</item>
     </style>
 
     <style name="ActionBar.TabView" parent="FrameworkRoot.ActionBar.TabView">

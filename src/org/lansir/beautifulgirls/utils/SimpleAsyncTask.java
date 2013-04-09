@@ -18,6 +18,14 @@ public abstract class SimpleAsyncTask<T> extends AsyncTask<Integer, Integer, T> 
     protected AkException mAkException = null;
     private Context mContext = null;
 
+    
+    public SimpleAsyncTask(){
+    	
+    }
+    
+    public SimpleAsyncTask(Context context){
+    	this.mContext = context;
+    }
     /**
      * guarantees the method be invoked on ui thread once time when task start.
      */
@@ -66,9 +74,11 @@ public abstract class SimpleAsyncTask<T> extends AsyncTask<Integer, Integer, T> 
                 return null;
             }
         } catch (AkException akException) {
+        	akException.printStackTrace();
             mAkException = akException;
             return null;
         } catch (Exception ex){
+        	ex.printStackTrace();
         	mAkException = new AkException(ex.getMessage(), ex);
             return null;
         }

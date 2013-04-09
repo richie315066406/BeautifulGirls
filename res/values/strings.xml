@@ -12,4 +12,28 @@
     <string name="menu_version_introduction">版本介绍</string>
     
     <string name="fragment_home">BeautifulGirls</string>
+    
+    <string name="descr_image">Image</string>
+    
+    <string name="last_page">当前已经是最后一页</string>
+    <string name="loading">正在加载中</string>
+    
+    <!-- Common -->
+    <string name="net_error">网络异常,请检查您的网络</string>
+    <string name="separater">/</string>
+    <string name="send">发送</string>
+    <string name="operate_success">操作成功</string>
+    <string name="operate_failure">操作失败</string>
+    <string name="send_success">发送成功</string>
+    <string name="send_failure">发送失败</string>
+    
+    <!-- Comment -->
+    <string name="loading_comment">评论读取中…</string>
+    <string name="publish_comment">发表评论</string>
+    <string name="comment_none_toast">没有评论，你就是楼主哦！</string>
+    <string name="comment_saymore">我也说一句</string>
+    <string name="comment_exceed_max_length">内容超出%d个字数，请更正!</string>
+    <!-- 标题 -->
+    <string name="title_comment">评论</string>
+    
 </resources>

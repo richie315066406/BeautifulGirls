@@ -1,39 +1,39 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-	<integer-array name="color_array">
-	    <item>@color/lightblue</item>
-	    <item>@color/darkgrey</item>
-	    <item>@color/lightyellow</item>
-	    <item>@color/yellow</item>
-	    <item>@color/snow</item>
-	    <item>@color/floralwhite</item>
-	    <item>@color/gold</item>
-	    <item>@color/hotpink</item>
-	    <item>@color/tomato</item>
-	    <item>@color/deeppink</item>
-	    <item>@color/fuchsia</item>
-	    <item>@color/magenta</item>
-	    <item>@color/red</item>
-	    <item>@color/oldlace</item>
-	    <item>@color/lightgoldenrodyellow</item>
-	    <item>@color/linen</item>
-	    <item>@color/antiquewhite</item>
-	    <item>@color/salmon</item>
-	    <item>@color/ghostwhite</item>
-	    <item>@color/mintcream</item>
-	    <item>@color/whitesmoke</item>
-	    <item>@color/beige</item>
-	    <item>@color/wheat</item>
-	    <item>@color/azure</item>
-	    <item>@color/honeydew</item>
-	    <item>@color/aliceblue</item>
-	    <item>@color/khaki</item>
-	    <item>@color/lightcoral</item>
-	    <item>@color/palegoldenrod</item>
-	    <item>@color/violet</item>
-	    <item>@color/khaki</item>
-	    <item>@color/gainsboro</item>
-	    <item>@color/channelheader</item>
-	</integer-array>    
+    <integer-array name="color_array">
+        <item>@color/lightblue</item>
+        <item>@color/darkgrey</item>
+        <item>@color/lightyellow</item>
+        <item>@color/ghostwhite</item>
+        <item>@color/snow</item>
+        <item>@color/floralwhite</item>
+        <item>@color/wheat</item>
+        <item>@color/hotpink</item>
+        <item>@color/tomato</item>
+        <item>@color/deeppink</item>
+        <item>@color/fuchsia</item>
+        <item>@color/magenta</item>
+        <item>@color/red</item>
+        <item>@color/oldlace</item>
+        <item>@color/lightgoldenrodyellow</item>
+        <item>@color/linen</item>
+        <item>@color/antiquewhite</item>
+        <item>@color/salmon</item>
+        <item>@color/yellow</item>
+        <item>@color/mintcream</item>
+        <item>@color/whitesmoke</item>
+        <item>@color/beige</item>
+        <item>@color/azure</item>
+        <item>@color/honeydew</item>
+        <item>@color/aliceblue</item>
+        <item>@color/khaki</item>
+        <item>@color/lightcoral</item>
+        <item>@color/palegoldenrod</item>
+        <item>@color/violet</item>
+        <item>@color/khaki</item>
+        <item>@color/gainsboro</item>
+        <item>@color/channelheader</item>
+    </integer-array>
+
 </resources>

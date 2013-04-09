@@ -4,3 +4,6 @@
 [submodule "contrib/ActionBarSherlock"]
 	path = contrib/ActionBarSherlock
 	url = https://github.com/JakeWharton/ActionBarSherlock.git
+[submodule "contrib/PullToRefresh"]
+	path = contrib/PullToRefresh
+	url = https://github.com/chrisbanes/Android-PullToRefresh.git
